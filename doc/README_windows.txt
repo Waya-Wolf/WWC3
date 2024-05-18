@@ -1,0 +1,16 @@
+Wayawolfcoin 1.0.1.1
+
+Copyright (c) 2017-2024 Wayawolfcoin Developers
+Copyright (c) 2020-8888 DiminutiveCoin Developers
+Copyright (c) 2013-8888 NovaCoin Developers
+Copyright (c) 2011-2013 PPCoin Developers
+Distributed under the MIT/X11 software license, see the accompanying
+file license.txt or http://www.opensource.org/licenses/mit-license.php.
+This product includes software developed by the OpenSSL Project for use in
+the OpenSSL Toolkit (http://www.openssl.org/).  This product includes
+cryptographic software written by Eric Young (eay@cryptsoft.com).
+
+
+Intro
+-----
+Wayawolfcoin is a free open source project with the goal of providing a long-term energy-efficient solutions

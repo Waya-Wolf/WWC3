@@ -1,0 +1,15 @@
+# http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-1.0.html
+
+[Desktop Entry]
+Type=Application
+Version=master
+Encoding=UTF-8
+Name=Pepperscore
+Icon=${SNAP}/meta/gui/wayawolfcoin128.png
+MimeType=x-scheme-handler/wayawolfcoin;
+Exec=wayawolfcoin
+Terminal=false
+Categories=Office;Finance;
+Comment=Pepperscore P2P Hybrid Cryptocurrency
+Keywords=internet;bitcoin;wayawolfcoin;
+Name[en_US]=wayawolfcoin.desktop
