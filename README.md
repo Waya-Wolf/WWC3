@@ -1,5 +1,4 @@
 # WayawolfcoinV3
-## wayawolfcoin-canis-lupus
 
 ## Coin Name : Waya Wolf Coin
 ## Coin Ticker : WW
@@ -17,7 +16,7 @@
 ## Coinbase Mining Maturity : 10 Blocks
 ## Coinbase Wallet Send Maturity : 10 Blocks
 ## Swap Premine: 10,060,000 WW
-## Distribution period 1440 Blocks / 3 Days
+## Distribution period 1440 Blocks / 3 Days Rewards .01 WW to get the chain moving
 ## Initial Rewards rewards : POW/POS : 6.25
 ## Initial Launch Halving : 44640 (~3 months)
 ## Having Events : 175200 Blocks (~1 year)
