@@ -229,3 +229,9 @@ Makefile.Release
 
 src/leveldb/libmemenv.a
 src/leveldb/libleveldb.a
+
+# Agents and other local config for AI
+.opencode
+.gemini
+.qwen
+.vscode
