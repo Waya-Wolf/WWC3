@@ -2038,6 +2038,10 @@ bool CBlock::AcceptBlock()
 	if (IsProofOfWork() && nHeight > Params().LastPOWBlock())
 		return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
 
+	// Validate coinstake transaction exists for PoS blocks
+	if (IsProofOfStake() && vtx.size() < 2)
+		return DoS(100, error("AcceptBlock() : proof-of-stake block has no coinstake transaction"));
+
 	// Check coinbase timestamp
 	if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime))
 		return DoS(50, error("AcceptBlock() : coinbase timestamp is too early"));
