@@ -2338,6 +2338,14 @@ bool CBlock::CheckBlockSignature() const
 	if (vchBlockSig.empty())
 		return false;
 
+	// Must have at least 2 transactions for PoS block signature validation
+	if (vtx.size() < 2)
+		return false;
+
+	// Second transaction must have at least 2 outputs
+	if (vtx[1].vout.size() < 2)
+		return false;
+
 	vector<valtype> vSolutions;
 	txnouttype whichType;
 
