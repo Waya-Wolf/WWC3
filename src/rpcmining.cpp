@@ -22,6 +22,9 @@ using namespace boost::assign;
 // Allocated in InitRPCMining, free'd in ShutdownRPCMining
 static CReserveKey* pMiningKey = NULL;
 
+// Lock protecting block template mining state
+static CCriticalSection cs_getBlockTemplate;
+
 void InitRPCMining()
 {
     if (!pwalletMain)
@@ -236,6 +239,8 @@ Value checkkernel(const Array& params, bool fHelp)
 
 Value getworkex(const Array& params, bool fHelp)
 {
+    LOCK(cs_getBlockTemplate);
+
     if (fHelp || params.size() > 2)
         throw runtime_error(
             "getworkex [data, coinbase]\n"
@@ -366,6 +371,8 @@ Value getworkex(const Array& params, bool fHelp)
 
 Value getwork(const Array& params, bool fHelp)
 {
+    LOCK(cs_getBlockTemplate);
+
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "getwork [data]\n"
@@ -482,6 +489,8 @@ Value getwork(const Array& params, bool fHelp)
 
 Value getblocktemplate(const Array& params, bool fHelp)
 {
+    LOCK(cs_getBlockTemplate);
+
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "getblocktemplate [params]\n"
