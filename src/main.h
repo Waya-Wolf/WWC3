@@ -676,7 +676,9 @@ public:
 
     std::pair<COutPoint, unsigned int> GetProofOfStake() const
     {
-        return IsProofOfStake()? std::make_pair(vtx[1].vin[0].prevout, vtx[1].nTime) : std::make_pair(COutPoint(), (unsigned int)0);
+        if (vtx.size() > 1 && vtx[1].IsCoinStake() && vtx[1].vin.size() > 0)
+            return std::make_pair(vtx[1].vin[0].prevout, vtx[1].nTime);
+        return std::make_pair(COutPoint(), (unsigned int)0);
     }
 
     // ppcoin: get max transaction timestamp
