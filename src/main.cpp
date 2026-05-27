@@ -2042,6 +2042,8 @@ bool CBlock::AcceptBlock()
 		return DoS(100, error("AcceptBlock() : incorrect %s", IsProofOfWork() ? "proof-of-work" : "proof-of-stake"));
 
 	// Check timestamp against prev
+	if (!pindexPrev)
+		return DoS(100, error("AcceptBlock() : null previous block index"));
 	if (GetBlockTime() <= pindexPrev->GetPastTimeLimit() || FutureDrift(GetBlockTime()) < pindexPrev->GetBlockTime())
 		return error("AcceptBlock() : block's timestamp is too early");
 
