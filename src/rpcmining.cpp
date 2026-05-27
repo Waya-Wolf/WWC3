@@ -359,7 +359,17 @@ Value getworkex(const Array& params, bool fHelp)
         if(coinbase.size() == 0)
             pblock->vtx[0].vin[0].scriptSig = mapNewBlock[pdata->hashMerkleRoot].second;
         else
-            CDataStream(coinbase, SER_NETWORK, PROTOCOL_VERSION) >> pblock->vtx[0]; // FIXME - HACK!
+        {
+            if (coinbase.size() > 10000)
+                throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "coinbase too large");
+            try {
+                CDataStream(coinbase, SER_NETWORK, PROTOCOL_VERSION) >> pblock->vtx[0];
+            } catch (std::exception &e) {
+                throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "coinbase deserialization failed");
+            }
+            if (!pblock->vtx[0].CheckTransaction())
+                throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "coinbase transaction invalid");
+        }
 
         pblock->hashMerkleRoot = pblock->BuildMerkleTree();
 
