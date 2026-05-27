@@ -2071,6 +2071,9 @@ bool CBlock::AcceptBlock()
 		return error("AcceptBlock() : rejected by synchronized checkpoint");
 
 	// Enforce rule that the coinbase starts with serialized block height
+	if (vtx[0].vin.empty())
+		return DoS(100, error("AcceptBlock() : coinbase has no inputs"));
+	
 	CScript expect = CScript() << nHeight;
 	if (vtx[0].vin[0].scriptSig.size() < expect.size() ||
 		!std::equal(expect.begin(), expect.end(), vtx[0].vin[0].scriptSig.begin()))
