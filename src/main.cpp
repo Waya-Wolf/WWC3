@@ -2285,7 +2285,7 @@ bool CBlock::SignBlock(CWallet& wallet, int64_t nFees)
 {
 	// if we are trying to sign
 	//    something except proof-of-stake block template
-	if (!vtx[0].vout[0].IsEmpty())
+	if (vtx.empty() || vtx[0].vout.empty() || !vtx[0].vout[0].IsEmpty())
 		return false;
 
 	// if we are trying to sign
