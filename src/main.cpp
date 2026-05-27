@@ -1512,7 +1512,11 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 	if (IsProofOfStake())
 	{
 		// ppcoin: coin stake tx earns reward instead of paying fee
+		if (vtx.size() < 2)
+			return DoS(100, error("ConnectBlock() : coinstake with no coinstake transaction"));
 		uint64_t nCoinAge;
+		if (!pindex->pprev)
+			return error("ConnectBlock() : genesis block does not have a previous block");
 		if (!vtx[1].GetCoinAge(txdb, pindex->pprev, nCoinAge))
 			return error("ConnectBlock() : %s unable to get coin age for coinstake", vtx[1].GetHash().ToString());
 
