@@ -1889,7 +1889,16 @@ bool CBlock::AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos, const u
 	if (!ComputeNextStakeModifier(pindexNew->pprev, nStakeModifier, fGeneratedStakeModifier))
 		return error("AddToBlockIndex() : ComputeNextStakeModifier() failed");
 	pindexNew->SetStakeModifier(nStakeModifier, fGeneratedStakeModifier);
-	pindexNew->bnStakeModifierV2 = ComputeStakeModifierV2(pindexNew->pprev, IsProofOfWork() ? hash : vtx[1].vin[0].prevout.hash);
+	if (IsProofOfWork())
+	{
+		pindexNew->bnStakeModifierV2 = ComputeStakeModifierV2(pindexNew->pprev, hash);
+	}
+	else
+	{
+		if (vtx.size() < 2 || vtx[1].vin.empty())
+			return error("AddToBlockIndex() : coinstake transaction missing or invalid for stake modifier");
+		pindexNew->bnStakeModifierV2 = ComputeStakeModifierV2(pindexNew->pprev, vtx[1].vin[0].prevout.hash);
+	}
 
 	// Add to mapBlockIndex
 	map<uint256, CBlockIndex*>::iterator mi = mapBlockIndex.insert(make_pair(hash, pindexNew)).first;
