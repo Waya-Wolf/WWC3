@@ -1489,7 +1489,11 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 			if (!tx.IsCoinStake())
 				nFees += nTxValueIn - nTxValueOut;
 			if (tx.IsCoinStake())
+			{
+				if (nTxValueOut < 0 || nTxValueIn < 0 || nTxValueOut < nTxValueIn)
+					return error("ConnectBlock() : invalid stake reward values (out=%d in=%d)", nTxValueOut, nTxValueIn);
 				nStakeReward = nTxValueOut - nTxValueIn;
+			}
 
 			if (!tx.ConnectInputs(txdb, mapInputs, mapQueuedChanges, posThisTx, pindex, true, false, flags))
 				return false;
