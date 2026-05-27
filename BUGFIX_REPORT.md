@@ -75,15 +75,35 @@ Each fix is a separate commit on `agents/bug-analysis-and-fix-plan`, strictly on
 
 ## Build Verification
 
+Two successful Docker builds on Ubuntu 16.04 (required for OpenSSL 1.0 compatibility).
+
+### 1. Daemon-only build (static libs)
+
 ```
-FROM ubuntu:16.04
-RUN apt-get install build-essential libssl-dev libdb++-dev libboost-all-dev libqrencode-dev libminiupnpc-dev
-RUN mkdir -p src/obj/crypto
+docker build -f Dockerfile.build
 RUN cd src && make -f makefile.unix USE_UPNP=1 STATIC=1
 ```
 
-Result: `wayawolfcoind` — **7.96 MB ELF 64-bit stripped executable, zero compilation errors.**
-Only warnings were pre-existing `void*` → type* casts in the third-party `sph` hash library (haval, sha2big), unrelated to our changes.
+→ `wayawolfcoind`: **7.96 MB** ELF 64-bit stripped executable, zero errors.
+
+### 2. Full Qt GUI build (static libs)
+
+```
+docker build -f Dockerfile.qt-static
+RUN sed -i 's/^#  Windows begin/.../' wayawolfcoin.pro   # wrap Win paths in win32{}
+RUN cd src && make -f makefile.unix USE_UPNP=1 STATIC=1
+RUN qmake "RELEASE=1" wayawolfcoin.pro && make
+```
+
+→ `wayawolfcoind`: **7.96 MB** stripped  
+→ `Wayawolfcoin-qt`: **11.9 MB** ELF 64-bit Qt5 GUI executable (not stripped)
+
+**Total:** zero compilation errors across all changed files (main.cpp, main.h, rpcmining.cpp, miner.cpp, wallet.cpp).  
+Only warnings are pre-existing `void*` → type* casts in the third-party `sph` hash library (haval, sha2big), unrelated to our changes.
+
+**Binaries extracted to `build-artifacts/`:**
+- `build-artifacts/wayawolfcoind` (7.96 MB)
+- `build-artifacts/Wayawolfcoin-qt` (11.9 MB)
 
 ---
 

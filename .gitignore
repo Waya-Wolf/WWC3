@@ -234,4 +234,4 @@ src/leveldb/libleveldb.a
 .opencode
 .gemini
 .qwen
-.vscode
+.vscodebuild-artifacts/
