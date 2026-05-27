@@ -113,7 +113,8 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFe
     {
         // Height first in coinbase required for block.version=2
         txNew.vin[0].scriptSig = (CScript() << nHeight) + COINBASE_FLAGS;
-        assert(txNew.vin[0].scriptSig.size() <= 100);
+        if (txNew.vin[0].scriptSig.size() > 100)
+            return NULL;
 
         txNew.vout[0].SetEmpty();
     }
@@ -349,7 +350,11 @@ void IncrementExtraNonce(CBlock* pblock, CBlockIndex* pindexPrev, unsigned int& 
 
     unsigned int nHeight = pindexPrev->nHeight+1; // Height first in coinbase required for block.version=2
     pblock->vtx[0].vin[0].scriptSig = (CScript() << nHeight << CBigNum(nExtraNonce)) + COINBASE_FLAGS;
-    assert(pblock->vtx[0].vin[0].scriptSig.size() <= 100);
+    if (pblock->vtx[0].vin[0].scriptSig.size() > 100)
+    {
+        LogPrintf("IncrementExtraNonce() : scriptSig size %d exceeds 100 byte limit\n", pblock->vtx[0].vin[0].scriptSig.size());
+        return;
+    }
 
     pblock->hashMerkleRoot = pblock->BuildMerkleTree();
 }
