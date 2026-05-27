@@ -1526,6 +1526,8 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 
 		int64_t nCalculatedStakeReward = GetProofOfStakeReward(nCoinAge, nFees, pindex->nHeight);
 
+		if (!MoneyRange(nStakeReward))
+			return DoS(100, error("ConnectBlock() : coinstake reward out of range"));
 		if (nStakeReward > nCalculatedStakeReward && nStakeReward != (5 * COIN + nFees))
 			return DoS(100, error("ConnectBlock() : coinstake pays too much(actual=%d vs calculated=%d)", nStakeReward, nCalculatedStakeReward));
 	}
