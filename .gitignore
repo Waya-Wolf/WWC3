@@ -1,4 +1,5 @@
 build/
+build-artifacts/
 debug/
 release/
 *.o
@@ -231,7 +232,7 @@ src/leveldb/libmemenv.a
 src/leveldb/libleveldb.a
 
 # Agents and other local config for AI
-.opencode
+.opencode/
 .gemini
 .qwen
 .vscodebuild-artifacts/
