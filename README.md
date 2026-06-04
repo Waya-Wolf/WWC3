@@ -23,7 +23,6 @@
 - [Swap & Burn](#swap--burn)
 - [Wallet Features](#wallet-features)
 - [Exchanges](#exchanges)
-- [Wolf Park](#wolf-park)
 - [Future Directions](#future-directions)
 - [Quick Resources](#quick-resources)
 - [License](#license)
@@ -110,12 +109,6 @@ WW is listed on two exchanges:
 
 - **Qutrade** — WW/BTC, WW/LTC, WW/DOGE
 - **Cratex** — WW/BTC, WW/LTC, WW/DOGE, WW/CRATX, WW/USDT, WW/BTCZ
-
----
-
-## Wolf Park
-
-Waya Wolf Coin proudly supports **Wolf Park** ([wolfpark.org](https://wolfpark.org)), a sanctuary and conservation center dedicated to wolves and natural conservation. Their **wolf howl nights** are a truly transcendent experience.
 
 ---
 
