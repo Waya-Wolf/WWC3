@@ -229,3 +229,7 @@ Makefile.Release
 
 src/leveldb/libmemenv.a
 src/leveldb/libleveldb.a
+
+# Agents and instructions
+.opencode/
+.github/claude/
