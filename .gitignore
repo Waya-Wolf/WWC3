@@ -231,8 +231,8 @@ Makefile.Release
 src/leveldb/libmemenv.a
 src/leveldb/libleveldb.a
 
-# Agents and other local config for AI
+# Agents and instructions
 .opencode/
 .gemini
 .qwen
-.vscodebuild-artifacts/
+.github/claude/
