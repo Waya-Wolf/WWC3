@@ -22,6 +22,9 @@ using namespace boost::assign;
 // Allocated in InitRPCMining, free'd in ShutdownRPCMining
 static CReserveKey* pMiningKey = NULL;
 
+// Lock protecting block template mining state
+static CCriticalSection cs_getBlockTemplate;
+
 void InitRPCMining()
 {
     if (!pwalletMain)
@@ -236,6 +239,8 @@ Value checkkernel(const Array& params, bool fHelp)
 
 Value getworkex(const Array& params, bool fHelp)
 {
+    LOCK(cs_getBlockTemplate);
+
     if (fHelp || params.size() > 2)
         throw runtime_error(
             "getworkex [data, coinbase]\n"
@@ -354,7 +359,17 @@ Value getworkex(const Array& params, bool fHelp)
         if(coinbase.size() == 0)
             pblock->vtx[0].vin[0].scriptSig = mapNewBlock[pdata->hashMerkleRoot].second;
         else
-            CDataStream(coinbase, SER_NETWORK, PROTOCOL_VERSION) >> pblock->vtx[0]; // FIXME - HACK!
+        {
+            if (coinbase.size() > 10000)
+                throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "coinbase too large");
+            try {
+                CDataStream(coinbase, SER_NETWORK, PROTOCOL_VERSION) >> pblock->vtx[0];
+            } catch (std::exception &e) {
+                throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "coinbase deserialization failed");
+            }
+            if (!pblock->vtx[0].CheckTransaction())
+                throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "coinbase transaction invalid");
+        }
 
         pblock->hashMerkleRoot = pblock->BuildMerkleTree();
 
@@ -366,6 +381,8 @@ Value getworkex(const Array& params, bool fHelp)
 
 Value getwork(const Array& params, bool fHelp)
 {
+    LOCK(cs_getBlockTemplate);
+
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "getwork [data]\n"
@@ -386,7 +403,7 @@ Value getwork(const Array& params, bool fHelp)
         throw JSONRPCError(RPC_MISC_ERROR, "No more PoW blocks");
 
     typedef map<uint256, pair<CBlock*, CScript> > mapNewBlock_t;
-    static mapNewBlock_t mapNewBlock;    // FIXME: thread safety
+    static mapNewBlock_t mapNewBlock;
     static vector<CBlock*> vNewBlock;
 
     if (params.size() == 0)
@@ -482,6 +499,8 @@ Value getwork(const Array& params, bool fHelp)
 
 Value getblocktemplate(const Array& params, bool fHelp)
 {
+    LOCK(cs_getBlockTemplate);
+
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "getblocktemplate [params]\n"

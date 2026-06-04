@@ -1441,6 +1441,10 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend, 
                 if (!SelectCoins(nTotalValue, wtxNew.nTime, setCoins, nValueIn, coinControl))
                     return false;
 
+                if (nValue < 0 || nFeeRet < 0 || nValueIn < 0)
+                    return false;
+                if (nValueIn < nValue + nFeeRet)
+                    return false;
                 int64_t nChange = nValueIn - nValue - nFeeRet;
 
                 if (nChange > 0)

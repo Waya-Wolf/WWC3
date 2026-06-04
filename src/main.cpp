@@ -1489,7 +1489,11 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 			if (!tx.IsCoinStake())
 				nFees += nTxValueIn - nTxValueOut;
 			if (tx.IsCoinStake())
+			{
+				if (nTxValueOut < 0 || nTxValueIn < 0 || nTxValueOut < nTxValueIn)
+					return error("ConnectBlock() : invalid stake reward values (out=%d in=%d)", nTxValueOut, nTxValueIn);
 				nStakeReward = nTxValueOut - nTxValueIn;
+			}
 
 			if (!tx.ConnectInputs(txdb, mapInputs, mapQueuedChanges, posThisTx, pindex, true, false, flags))
 				return false;
@@ -1512,12 +1516,18 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 	if (IsProofOfStake())
 	{
 		// ppcoin: coin stake tx earns reward instead of paying fee
+		if (vtx.size() < 2)
+			return DoS(100, error("ConnectBlock() : coinstake with no coinstake transaction"));
 		uint64_t nCoinAge;
+		if (!pindex->pprev)
+			return error("ConnectBlock() : genesis block does not have a previous block");
 		if (!vtx[1].GetCoinAge(txdb, pindex->pprev, nCoinAge))
 			return error("ConnectBlock() : %s unable to get coin age for coinstake", vtx[1].GetHash().ToString());
 
 		int64_t nCalculatedStakeReward = GetProofOfStakeReward(nCoinAge, nFees, pindex->nHeight);
 
+		if (!MoneyRange(nStakeReward))
+			return DoS(100, error("ConnectBlock() : coinstake reward out of range"));
 		if (nStakeReward > nCalculatedStakeReward && nStakeReward != (5 * COIN + nFees))
 			return DoS(100, error("ConnectBlock() : coinstake pays too much(actual=%d vs calculated=%d)", nStakeReward, nCalculatedStakeReward));
 	}
@@ -1885,7 +1895,16 @@ bool CBlock::AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos, const u
 	if (!ComputeNextStakeModifier(pindexNew->pprev, nStakeModifier, fGeneratedStakeModifier))
 		return error("AddToBlockIndex() : ComputeNextStakeModifier() failed");
 	pindexNew->SetStakeModifier(nStakeModifier, fGeneratedStakeModifier);
-	pindexNew->bnStakeModifierV2 = ComputeStakeModifierV2(pindexNew->pprev, IsProofOfWork() ? hash : vtx[1].vin[0].prevout.hash);
+	if (IsProofOfWork())
+	{
+		pindexNew->bnStakeModifierV2 = ComputeStakeModifierV2(pindexNew->pprev, hash);
+	}
+	else
+	{
+		if (vtx.size() < 2 || vtx[1].vin.empty())
+			return error("AddToBlockIndex() : coinstake transaction missing or invalid for stake modifier");
+		pindexNew->bnStakeModifierV2 = ComputeStakeModifierV2(pindexNew->pprev, vtx[1].vin[0].prevout.hash);
+	}
 
 	// Add to mapBlockIndex
 	map<uint256, CBlockIndex*>::iterator mi = mapBlockIndex.insert(make_pair(hash, pindexNew)).first;
@@ -2025,6 +2044,10 @@ bool CBlock::AcceptBlock()
 	if (IsProofOfWork() && nHeight > Params().LastPOWBlock())
 		return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
 
+	// Validate coinstake transaction exists for PoS blocks
+	if (IsProofOfStake() && vtx.size() < 2)
+		return DoS(100, error("AcceptBlock() : proof-of-stake block has no coinstake transaction"));
+
 	// Check coinbase timestamp
 	if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime))
 		return DoS(50, error("AcceptBlock() : coinbase timestamp is too early"));
@@ -2038,6 +2061,8 @@ bool CBlock::AcceptBlock()
 		return DoS(100, error("AcceptBlock() : incorrect %s", IsProofOfWork() ? "proof-of-work" : "proof-of-stake"));
 
 	// Check timestamp against prev
+	if (!pindexPrev)
+		return DoS(100, error("AcceptBlock() : null previous block index"));
 	if (GetBlockTime() <= pindexPrev->GetPastTimeLimit() || FutureDrift(GetBlockTime()) < pindexPrev->GetBlockTime())
 		return error("AcceptBlock() : block's timestamp is too early");
 
@@ -2071,6 +2096,9 @@ bool CBlock::AcceptBlock()
 		return error("AcceptBlock() : rejected by synchronized checkpoint");
 
 	// Enforce rule that the coinbase starts with serialized block height
+	if (vtx[0].vin.empty())
+		return DoS(100, error("AcceptBlock() : coinbase has no inputs"));
+	
 	CScript expect = CScript() << nHeight;
 	if (vtx[0].vin[0].scriptSig.size() < expect.size() ||
 		!std::equal(expect.begin(), expect.end(), vtx[0].vin[0].scriptSig.begin()))
@@ -2282,7 +2310,7 @@ bool CBlock::SignBlock(CWallet& wallet, int64_t nFees)
 {
 	// if we are trying to sign
 	//    something except proof-of-stake block template
-	if (!vtx[0].vout[0].IsEmpty())
+	if (vtx.empty() || vtx[0].vout.empty() || !vtx[0].vout[0].IsEmpty())
 		return false;
 
 	// if we are trying to sign
@@ -2336,6 +2364,14 @@ bool CBlock::CheckBlockSignature() const
 		return vchBlockSig.empty();
 
 	if (vchBlockSig.empty())
+		return false;
+
+	// Must have at least 2 transactions for PoS block signature validation
+	if (vtx.size() < 2)
+		return false;
+
+	// Second transaction must have at least 2 outputs
+	if (vtx[1].vout.size() < 2)
 		return false;
 
 	vector<valtype> vSolutions;
