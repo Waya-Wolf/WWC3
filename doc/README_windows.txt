@@ -1,9 +1,9 @@
-Wayawolfcoin 1.0.1.1
+Wayawolfcoin 1.0.0.0
 
-Copyright (c) 2017-2024 Wayawolfcoin Developers
-Copyright (c) 2020-8888 DiminutiveCoin Developers
-Copyright (c) 2013-8888 NovaCoin Developers
-Copyright (c) 2011-2013 PPCoin Developers
+Copyright (c) 2017-2025 Wayawolfcoin Developers
+Copyright (c) 2020-2024 DiminutiveCoin Developers
+Copyright (c) 2013-2024 NovaCoin Developers
+Copyright (c) 2011-2024 PPCoin Developers
 Distributed under the MIT/X11 software license, see the accompanying
 file license.txt or http://www.opensource.org/licenses/mit-license.php.
 This product includes software developed by the OpenSSL Project for use in

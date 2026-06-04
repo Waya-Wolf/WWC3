@@ -1,6 +1,9 @@
 Wayawolfcoin-qt: Qt5 GUI for Wayawolfcoin
 ===============================
 
+Pre-built binaries are available at https://github.com/Waya-Wolf/WWC3/releases
+These instructions are only needed if you wish to compile from source.
+
 Build instructions
 ===================
 
