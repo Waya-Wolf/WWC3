@@ -1,3 +1,6 @@
+Pre-built binaries are available at https://github.com/Waya-Wolf/WWC3/releases
+These instructions are only needed if you wish to compile from source.
+
 Mac OS X Build Instructions and Notes
 ====================================
 This guide will show you how to build wayawolfcoind(headless client) for OSX.
@@ -50,8 +53,8 @@ After exiting, you'll get a warning that the install is keg-only, which means it
     $ brew link --force berkeley-db4
 ### Building `wayawolfcoind`
 1. Clone the github tree to get the source code and go into the directory.
-        git clone https://github.com/Wayawolfcoin-project/Wayawolfcoin.git
-        cd Wayawolfcoin
+        git clone https://github.com/Waya-Wolf/WWC3.git
+        cd WWC3
 2. Build Wayawolfcoin-Qt application:
         qmake
         make

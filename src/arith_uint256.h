@@ -3,8 +3,8 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef PEPPERSCORE_ARITH_UINT256_H
-#define PEPPERSCORE_ARITH_UINT256_H
+#ifndef WAYAWOLFCOIN_ARITH_UINT256_H
+#define WAYAWOLFCOIN_ARITH_UINT256_H
 
 // Temporary for migration to opaque uint160/256
 #include "uint256.h"
@@ -21,4 +21,4 @@ public:
 #define ArithToUint256(x) (x)
 #define UintToArith256(x) (x)
 
-#endif // PEPPERSCORE_UINT256_H
+#endif // WAYAWOLFCOIN_ARITH_UINT256_H

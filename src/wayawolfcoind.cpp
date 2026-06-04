@@ -50,7 +50,7 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to wayawolfcoind / RPC client
-            std::string strUsage = _("Pepperscore version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("Wayawolfcoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
                   "  wayawolfcoind [options]                     " + "\n" +
                   "  wayawolfcoind [options] <command> [params]  " + _("Send command to -server or wayawolfcoind") + "\n" +

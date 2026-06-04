@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PEPPERSCORE_LEVELDB_H
-#define PEPPERSCORE_LEVELDB_H
+#ifndef WAYAWOLFCOIN_LEVELDB_H
+#define WAYAWOLFCOIN_LEVELDB_H
 
 #include "main.h"
 
@@ -203,4 +203,4 @@ private:
 };
 
 
-#endif // PEPPERSCORE_DB_H
+#endif // WAYAWOLFCOIN_LEVELDB_H

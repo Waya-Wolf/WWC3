@@ -1,0 +1,55 @@
+Copyright (c) 2009-2012 Bitcoin Developers
+Distributed under the MIT/X11 software license, see the accompanying
+file license.txt or http://www.opensource.org/licenses/mit-license.php.
+This product includes software developed by the OpenSSL Project for use in
+the OpenSSL Toolkit (http://www.openssl.org/).  This product includes
+cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP
+software written by Thomas Bernard.
+
+
+Pre-built binaries are available at https://github.com/Waya-Wolf/WWC3/releases
+These instructions are only needed if you wish to compile from source.
+
+
+DOCKER BUILD
+============
+
+The easiest way to build Wayawolfcoin from source is with Docker.
+No toolchain setup is needed.  The script handles everything inside
+a clean Ubuntu 16.04 environment that matches the original release.
+
+Prerequisites
+-------------
+
+Install Docker: https://docs.docker.com/engine/install/
+
+Usage
+-----
+
+  cd share/
+  ./build-docker.sh [version]
+
+The build produces a headless daemon (wayawolfcoind) and a Qt GUI
+(Wayawolfcoin-qt).  Both are statically linked against Qt5.
+
+Output
+------
+
+Binaries and archives are written to /tmp/wwc3-v<version>/.
+
+  /tmp/wwc3-v1.0.0/
+    wayawolfcoind-linux-x86_64
+    Wayawolfcoin-qt-linux-x86_64
+    wayawolfcoind-linux-x86_64.tar.gz
+    Wayawolfcoin-qt-linux-x86_64.tar.gz
+    SHA256SUMS
+
+Artifacts are not tracked by git.  They live outside the repository
+so the working tree stays clean.
+
+Notes
+-----
+
+The build uses the same GCC 4.9.0, OpenSSL 1.0.2g, Berkeley DB 4.8.30.NC,
+Boost 1.58.0, and miniupnpc 1.6 toolchain as the original release,
+ensuring bit-identical behavior.

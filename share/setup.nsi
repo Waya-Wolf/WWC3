@@ -1,12 +1,12 @@
-Name Pepperscore
+Name Wayawolfcoin
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 1.0.1.1
-!define COMPANY "Pepperscore project"
+!define VERSION 1.0.0.0
+!define COMPANY "WayaWolfCoin Developers"
 !define URL http://wayawolfcoin.com/
 
 # MUI Symbol Definitions
@@ -19,7 +19,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER Pepperscore
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER Wayawolfcoin
 #!define MUI_FINISHPAGE_RUN $INSTDIR\wayawolfcoin-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
@@ -45,14 +45,14 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile wayawolfcoin-1.0.1.1-win32-setup.exe
-InstallDir $PROGRAMFILES\Pepperscore
+OutFile wayawolfcoin-1.0.0.0-win32-setup.exe
+InstallDir $PROGRAMFILES\Wayawolfcoin
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 1.0.1.1
-VIAddVersionKey ProductName Pepperscore
+VIProductVersion 1.0.0.0
+VIAddVersionKey ProductName Wayawolfcoin
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -87,7 +87,7 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall Pepperscore.lnk" $INSTDIR\uninstall.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall Wayawolfcoin.lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayVersion "${VERSION}"
@@ -100,7 +100,7 @@ Section -post SEC0001
 
     # wayawolfcoin: URI handling disabled for 0.6.0
     #    WriteRegStr HKCR "wayawolfcoin" "URL Protocol" ""
-    #    WriteRegStr HKCR "wayawolfcoin" "" "URL:Pepperscore"
+    #    WriteRegStr HKCR "wayawolfcoin" "" "URL:Wayawolfcoin"
     #    WriteRegStr HKCR "wayawolfcoin\DefaultIcon" "" $INSTDIR\wayawolfcoin-qt.exe
     #    WriteRegStr HKCR "wayawolfcoin\shell\open\command" "" '"$INSTDIR\wayawolfcoin-qt.exe" "$$1"'
 SectionEnd
@@ -130,9 +130,9 @@ SectionEnd
 
 Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall Pepperscore.lnk"
-    #Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Pepperscore.lnk"
-    #Delete /REBOOTOK "$SMSTARTUP\Pepperscore.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall Wayawolfcoin.lnk"
+    #Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Wayawolfcoin.lnk"
+    #Delete /REBOOTOK "$SMSTARTUP\Wayawolfcoin.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log

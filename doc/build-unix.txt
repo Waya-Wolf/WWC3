@@ -7,6 +7,9 @@ cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP
 software written by Thomas Bernard.
 
 
+Pre-built binaries are available at https://github.com/Waya-Wolf/WWC3/releases
+These instructions are only needed if you wish to compile from source.
+
 UNIX BUILD NOTES
 ================
 
