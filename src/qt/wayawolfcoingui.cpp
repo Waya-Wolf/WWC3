@@ -1,8 +1,8 @@
 /*
  * Qt4 Wayawolfcoin GUI.
  *
- * W.J. van der Laan 2011-8888
- * The DiminutiveCoin Developers 2020-8888
+ * W.J. van der Laan 2011-2014
+ * The DiminutiveCoin Developers 2020-2021
  * The Wayawolfcoin Developers 2017-2024
  */
 

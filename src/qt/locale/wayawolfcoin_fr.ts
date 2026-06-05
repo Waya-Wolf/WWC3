@@ -13,11 +13,11 @@
     </message>
     <message>
         <location line="+41"/>
-        <source>Copyright © 2009-8888 The Bitcoin developers
-Copyright © 2020-8888 The DiminutiveCoin developers
+        <source>Copyright © 2009-2014 The Bitcoin developers
+Copyright © 2020-2021 The DiminutiveCoin developers
 Copyright © 2017-2023 The Wayawolfcoin developers</source>
-        <translation>Copyright © 2009-8888 Les développeurs Bitcoin
-Copyright © 2020-8888 Les développeurs DiminutiveCoin
+        <translation>Copyright © 2009-2014 Les développeurs Bitcoin
+Copyright © 2020-2021 Les développeurs DiminutiveCoin
 Copyright © 2022-2023 Les développeurs Wayawolfcoin</translation>
     </message>
     <message>

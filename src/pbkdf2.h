@@ -1,4 +1,4 @@
-// Copyright (c) 2013-8888 NovaCoin Developers
+// Copyright (c) 2013-2020 NovaCoin Developers
 
 #ifndef PBKDF2_H
 #define PBKDF2_H
