@@ -13,10 +13,10 @@
     </message>
     <message>
         <location line="+41"/>
-        <source>Copyright © 2009-8888 The Bitcoin developers
+        <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2020-2021 The DiminutiveCoin developers
 Copyright © 2022-2023 The PeppersCore developers</source>
-        <translation>コピーライト © 2009-8888 The Bitcoin developers
+        <translation>コピーライト © 2009-2014 The Bitcoin developers
 コピーライト © 2020-2021 The DiminutiveCoin developers
 コピーライト © 2022-2023 The PeppersCore developers</translation>
     </message>

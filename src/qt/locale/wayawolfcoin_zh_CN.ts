@@ -13,10 +13,10 @@
     </message>
     <message>
         <location line="+41"/>
-        <source>Copyright © 2009-8888 The Bitcoin developers
+        <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2020-2021 The DiminutiveCoin developers
 Copyright © 2017-2023 The Wayawolfcoin developers</source>
-        <translation>版权所有 © 2009-8888 比特币Bitcoin开发组
+        <translation>版权所有 © 2009-2014 比特币Bitcoin开发组
 版权所有 © 2020-2021 黑币DiminutiveCoin开发组
 版权所有 © 2022-2023 黑币PeppersCore开发组</translation>
     </message>
