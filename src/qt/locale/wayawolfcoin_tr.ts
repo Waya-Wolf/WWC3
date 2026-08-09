@@ -3,22 +3,24 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About PeppersCore</source>
-        <translation>PeppersCore Hakkında</translation>
+        <source>About Wayawolfcoin</source>
+        <translation>Wayawolfcoin Hakkında</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;PeppersCore&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;PeppersCore&lt;/b&gt; versiyonu</translation>
+        <source>&lt;b&gt;Wayawolfcoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Wayawolfcoin&lt;/b&gt; versiyonu</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2020-2021 The DiminutiveCoin developers
-Copyright © 2022-2023 The PeppersCore developers</source>
+Copyright © 2022-2023 The PeppersCore developers
+Copyright © 2023-2026 The Wayawolfcoin developers</source>
         <translation>Telif Hakkı © 2009-2014 Bitcoin geliştiricileri
 Telif Hakkı © 2020-2021 DiminutiveCoin geliştiricileri
-Telif Hakkı © 2022-2023 PeppersCore geliştiricileri</translation>
+Telif Hakkı © 2022-2023 PeppersCore geliştiricileri
+Telif Hakkı © 2023-2026 Wayawolfcoin geliştiricileri</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +67,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your PeppersCore addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Bunlar, ödeme almak için PeppersCore adreslerinizdir. Her bir göndericiye farklı birini verebilir, böylece size kimin ödeme yaptığını takip edebilirsiniz.</translation>
+        <source>These are your Wayawolfcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Bunlar, ödeme almak için Wayawolfcoin adreslerinizdir. Her bir göndericiye farklı birini verebilir, böylece size kimin ödeme yaptığını takip edebilirsiniz.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -80,8 +82,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a PeppersCore address</source>
-        <translation>Bir PeppersCore adresine sahip olduğunu ispatlamak için bir mesaj imzala</translation>
+        <source>Sign a message to prove you own a Wayawolfcoin address</source>
+        <translation>Bir Wayawolfcoin adresine sahip olduğunu ispatlamak için bir mesaj imzala</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +97,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified PeppersCore address</source>
-        <translation>Mesajın, belirli bir PeppersCore adresiyle imzalandığından emin olmak için onu doğrula</translation>
+        <source>Verify a message to ensure it was signed with a specified Wayawolfcoin address</source>
+        <translation>Mesajın, belirli bir Wayawolfcoin adresiyle imzalandığından emin olmak için onu doğrula</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,8 +265,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="+82"/>
-        <source>PeppersCore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>PeppersCore, şifreleme işlemini tamamlamak için şimdi kapatılacak. Cüzdanınızı şifrelemenin; coinlerinizin, bilgisayarınızı etkileyen zararlı yazılımlar tarafından çalınmasını bütünüyle engelleyemeyebileceğini unutmayınız.</translation>
+        <source>Wayawolfcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Wayawolfcoin, şifreleme işlemini tamamlamak için şimdi kapatılacak. Cüzdanınızı şifrelemenin; coinlerinizin, bilgisayarınızı etkileyen zararlı yazılımlar tarafından çalınmasını bütünüyle engelleyemeyebileceğini unutmayınız.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -309,7 +311,7 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
 </context>
 <context>
-    <name>PeppersCoreGUI</name>
+    <name>WayawolfcoinGUI</name>
     <message>
         <location filename="../wayawolfcoingui.cpp" line="+297"/>
         <source>Sign &amp;message...</source>
@@ -357,8 +359,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about PeppersCore</source>
-        <translation>PeppersCore hakkındaki bilgiyi göster</translation>
+        <source>Show information about Wayawolfcoin</source>
+        <translation>Wayawolfcoin hakkındaki bilgiyi göster</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -397,13 +399,13 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a PeppersCore address</source>
-        <translation>Bir PeppersCore adresine coin gönder</translation>
+        <source>Send coins to a Wayawolfcoin address</source>
+        <translation>Bir Wayawolfcoin adresine coin gönder</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for PeppersCore</source>
-        <translation>PeppersCore yapılandırma seçeneklerini değiştir</translation>
+        <source>Modify configuration options for Wayawolfcoin</source>
+        <translation>Wayawolfcoin yapılandırma seçeneklerini değiştir</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -443,8 +445,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <source>PeppersCore</source>
-        <translation>PeppersCore</translation>
+        <source>Wayawolfcoin</source>
+        <translation>Wayawolfcoin</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -453,8 +455,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About PeppersCore</source>
-        <translation>PeppersCore &amp;Hakkında</translation>
+        <source>&amp;About Wayawolfcoin</source>
+        <translation>Wayawolfcoin &amp;Hakkında</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -505,13 +507,13 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>PeppersCore client</source>
-        <translation>PeppersCore istemcisi</translation>
+        <source>Wayawolfcoin client</source>
+        <translation>Wayawolfcoin istemcisi</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to PeppersCore network</source>
-        <translation><numerusform>PeppersCore ağına %n etkin bağlantı</numerusform><numerusform>PeppersCore ağına %n etkin bağlantı</numerusform></translation>
+        <source>%n active connection(s) to Wayawolfcoin network</source>
+        <translation><numerusform>Wayawolfcoin ağına %n etkin bağlantı</numerusform><numerusform>Wayawolfcoin ağına %n etkin bağlantı</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -605,8 +607,8 @@ Adres: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid PeppersCore address or malformed URI parameters.</source>
-        <translation>URI ayrıştırılamadı! Bu, geçersiz bir PeppersCore adresi veya hatalı URI parametreleri nedeniyle olabilir.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Wayawolfcoin address or malformed URI parameters.</source>
+        <translation>URI ayrıştırılamadı! Bu, geçersiz bir Wayawolfcoin adresi veya hatalı URI parametreleri nedeniyle olabilir.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -728,8 +730,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../wayawolfcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. PeppersCore can no longer continue safely and will quit.</source>
-        <translation>Önemli bir hata oluştu. PeppersCore artık güvenli bir şekilde devam edemez ve şimdi kapatılacak.</translation>
+        <source>A fatal error occurred. Wayawolfcoin can no longer continue safely and will quit.</source>
+        <translation>Önemli bir hata oluştu. Wayawolfcoin artık güvenli bir şekilde devam edemez ve şimdi kapatılacak.</translation>
     </message>
 </context>
 <context>
@@ -1062,8 +1064,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid PeppersCore address.</source>
-        <translation>Girilen %1 adresi, geçerli bir PeppersCore adresi değildir.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Wayawolfcoin address.</source>
+        <translation>Girilen %1 adresi, geçerli bir Wayawolfcoin adresi değildir.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1081,8 +1083,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>PeppersCore-Qt</source>
-        <translation>PeppersCore-Qt</translation>
+        <source>Wayawolfcoin-Qt</source>
+        <translation>Wayawolfcoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1154,13 +1156,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start PeppersCore after logging in to the system.</source>
-        <translation>Sisteme giriş yaptıktan sonra PeppersCore&apos;i otomatik olarak başlat</translation>
+        <source>Automatically start Wayawolfcoin after logging in to the system.</source>
+        <translation>Sisteme giriş yaptıktan sonra Wayawolfcoin&apos;i otomatik olarak başlat</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start PeppersCore on system login</source>
-        <translation>Sisteme girişte PeppersCore&apos;i &amp;başlat</translation>
+        <source>&amp;Start Wayawolfcoin on system login</source>
+        <translation>Sisteme girişte Wayawolfcoin&apos;i &amp;başlat</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1169,8 +1171,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the PeppersCore client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönelticide PeppersCore istemci portunu otomatik olarak aç. Bu, sadece yönelticiniz UPnP&apos;i desteklediğinde ve etkin olduğunda çalışır.</translation>
+        <source>Automatically open the Wayawolfcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönelticide Wayawolfcoin istemci portunu otomatik olarak aç. Bu, sadece yönelticiniz UPnP&apos;i desteklediğinde ve etkin olduğunda çalışır.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1199,7 +1201,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the PeppersCore network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Wayawolfcoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1244,8 +1246,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting PeppersCore.</source>
-        <translation>Kullanıcı arabirimi dili buradan ayarwayawolfcoinbilir. Ayar, PeppersCore yeniden başlatıldığında etkin olacaktır.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Wayawolfcoin.</source>
+        <translation>Kullanıcı arabirimi dili buradan ayarwayawolfcoinbilir. Ayar, Wayawolfcoin yeniden başlatıldığında etkin olacaktır.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1311,8 +1313,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting PeppersCore.</source>
-        <translation>Bu ayar, PeppersCore&apos;i yeniden başlattıktan sonra etkin olacaktır.</translation>
+        <source>This setting will take effect after restarting Wayawolfcoin.</source>
+        <translation>Bu ayar, Wayawolfcoin&apos;i yeniden başlattıktan sonra etkin olacaktır.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1330,8 +1332,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PeppersCore network after a connection is established, but this process has not completed yet.</source>
-        <translation>Görüntülenen bilginin tarihi geçmiş olabilir. Cüzdanınız, bağlantı kurulduktan sonra otomatik olarak PeppersCore ağı ile senkronize olur ancak bu süreç, henüz tamamlanmamıştır.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Wayawolfcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Görüntülenen bilginin tarihi geçmiş olabilir. Cüzdanınız, bağlantı kurulduktan sonra otomatik olarak Wayawolfcoin ağı ile senkronize olur ancak bu süreç, henüz tamamlanmamıştır.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1405,7 +1407,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
         <source>Cannot start wayawolfcoin: click-to-pay handler</source>
-        <translation>PeppersCore: tıkla-ve-öde işleyicisi başlatılamıyor</translation>
+        <translation>Wayawolfcoin: tıkla-ve-öde işleyicisi başlatılamıyor</translation>
     </message>
 </context>
 <context>
@@ -1572,8 +1574,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the PeppersCore-Qt help message to get a list with possible PeppersCore command-line options.</source>
-        <translation>Muhtemel PeppersCore komut satırı seçeneklerinin bir listesini getirmek için PeppersCore-Qt yardım mesajını göster</translation>
+        <source>Show the Wayawolfcoin-Qt help message to get a list with possible Wayawolfcoin command-line options.</source>
+        <translation>Muhtemel Wayawolfcoin komut satırı seçeneklerinin bir listesini getirmek için Wayawolfcoin-Qt yardım mesajını göster</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1592,13 +1594,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>PeppersCore - Debug window</source>
-        <translation>PeppersCore - Hata ayıklama penceresi</translation>
+        <source>Wayawolfcoin - Debug window</source>
+        <translation>Wayawolfcoin - Hata ayıklama penceresi</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>PeppersCore Core</source>
-        <translation>PeppersCore Core</translation>
+        <source>Wayawolfcoin Core</source>
+        <translation>Wayawolfcoin Core</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1607,8 +1609,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the PeppersCore debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>PeppersCore hata ayıklama günlük kütüğü dosyasını, mevcut veri klasöründen aç. Bu işlem, büyük günlük kütüğü dosyaları için birkaç saniye sürebilir.</translation>
+        <source>Open the Wayawolfcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Wayawolfcoin hata ayıklama günlük kütüğü dosyasını, mevcut veri klasöründen aç. Bu işlem, büyük günlük kütüğü dosyaları için birkaç saniye sürebilir.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1617,8 +1619,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the PeppersCore RPC console.</source>
-        <translation>PeppersCore RPC konsoluna hoş geldiniz.</translation>
+        <source>Welcome to the Wayawolfcoin RPC console.</source>
+        <translation>Wayawolfcoin RPC konsoluna hoş geldiniz.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1678,7 +1680,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>PeppersCore yolla</translation>
+        <translation>Wayawolfcoin yolla</translation>
     </message>
     <message>
         <location line="+76"/>
@@ -1798,8 +1800,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a PeppersCore address (e.g. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Bir PeppersCore adresi gir (örn: E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Wayawolfcoin address (e.g. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Bir Wayawolfcoin adresi gir (örn: E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1898,8 +1900,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid PeppersCore address</source>
-        <translation>UYARI: Geçersiz PeppersCore adresi</translation>
+        <source>WARNING: Invalid Wayawolfcoin address</source>
+        <translation>UYARI: Geçersiz Wayawolfcoin adresi</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1972,8 +1974,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a PeppersCore address (e.g. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Bir PeppersCore adresi girin (örn: E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Wayawolfcoin address (e.g. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Bir Wayawolfcoin adresi girin (örn: E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2033,8 +2035,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this PeppersCore address</source>
-        <translation>Bu PeppersCore adresine sahip olduğunuzu ispatlamak için mesajı imzala</translation>
+        <source>Sign the message to prove you own this Wayawolfcoin address</source>
+        <translation>Bu Wayawolfcoin adresine sahip olduğunuzu ispatlamak için mesajı imzala</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2065,8 +2067,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified PeppersCore address</source>
-        <translation>Mesajın, belirtilen PeppersCore adresiyle imzalandığından emin olmak için onu doğrula</translation>
+        <source>Verify the message to ensure it was signed with the specified Wayawolfcoin address</source>
+        <translation>Mesajın, belirtilen Wayawolfcoin adresiyle imzalandığından emin olmak için onu doğrula</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2076,8 +2078,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a PeppersCore address (e.g. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Bir PeppersCore adresi girin (örn: E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Wayawolfcoin address (e.g. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Bir Wayawolfcoin adresi girin (örn: E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2086,8 +2088,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter PeppersCore signature</source>
-        <translation>PeppersCore imzası gir</translation>
+        <source>Enter Wayawolfcoin signature</source>
+        <translation>Wayawolfcoin imzası gir</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2665,8 +2667,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>wayawolfcoin-core</name>
     <message>
         <location filename="../wayawolfcoinstrings.cpp" line="+171"/>
-        <source>PeppersCore version</source>
-        <translation>PeppersCore versiyonu</translation>
+        <source>Wayawolfcoin version</source>
+        <translation>Wayawolfcoin versiyonu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2724,7 +2726,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;PeppersCore Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Wayawolfcoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, konfigürasyon dosyasında bir rpcpassword belirlemelisiniz: 
 %s
@@ -2735,7 +2737,7 @@ rpcpassword=%s
 Kullanıcı adı ve şifre aynı OLMAMALIDIR.
 Dosya mevcut değilse, sadece sahibi tarafından okunabilir yetkiyle yaratın.
 Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanız önerilir;
-örneğin: alertnotify=echo %%s | mail -s &quot;PeppersCore Alarmı&quot; admin@foo.com
+örneğin: alertnotify=echo %%s | mail -s &quot;Wayawolfcoin Alarmı&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2840,8 +2842,8 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong PeppersCore will not work properly.</source>
-        <translation>Uyarı: Lütfen bilgisayarınızın tarih ve saatinin doğru olduğunu kontrol ediniz! Saatiniz yanlış ise, PeppersCore düzgün çalışmayacaktır.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Wayawolfcoin will not work properly.</source>
+        <translation>Uyarı: Lütfen bilgisayarınızın tarih ve saatinin doğru olduğunu kontrol ediniz! Saatiniz yanlış ise, Wayawolfcoin düzgün çalışmayacaktır.</translation>
     </message>
     <message>
         <location line="+130"/>
@@ -3135,8 +3137,8 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="+8"/>
-        <source>Initialization sanity check failed. PeppersCore is shutting down.</source>
-        <translation>Başlangıç uygunluk kontrolü başarısız oldu. PeppersCore kapatılıyor.</translation>
+        <source>Initialization sanity check failed. Wayawolfcoin is shutting down.</source>
+        <translation>Başlangıç uygunluk kontrolü başarısız oldu. Wayawolfcoin kapatılıyor.</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -3190,13 +3192,13 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of PeppersCore</source>
-        <translation>wallet.dat yüklenirken hata: Cüzdan, daha yeni bir PeppersCore versiyonuna ihtiyaç duyuyor.</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Wayawolfcoin</source>
+        <translation>wallet.dat yüklenirken hata: Cüzdan, daha yeni bir Wayawolfcoin versiyonuna ihtiyaç duyuyor.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart PeppersCore to complete</source>
-        <translation>Cüzdanın yeniden yazılması gerekmektedir: Tamamlamak için PeppersCore&apos;i yeniden başlatın</translation>
+        <source>Wallet needed to be rewritten: restart Wayawolfcoin to complete</source>
+        <translation>Cüzdanın yeniden yazılması gerekmektedir: Tamamlamak için Wayawolfcoin&apos;i yeniden başlatın</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3255,8 +3257,8 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="+124"/>
-        <source>Unable to bind to %s on this computer. PeppersCore is probably already running.</source>
-        <translation>Bu bilgisayarda %s bağwayawolfcoinmadı. PeppersCore muhtemelen halen çalışmaktadır.</translation>
+        <source>Unable to bind to %s on this computer. Wayawolfcoin is probably already running.</source>
+        <translation>Bu bilgisayarda %s bağwayawolfcoinmadı. Wayawolfcoin muhtemelen halen çalışmaktadır.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3290,8 +3292,8 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. PeppersCore is probably already running.</source>
-        <translation>Veri klasörü %s üzerinde kilit elde edilemedi. PeppersCore muhtemelen halen çalışmaktadır.</translation>
+        <source>Cannot obtain a lock on data directory %s. Wayawolfcoin is probably already running.</source>
+        <translation>Veri klasörü %s üzerinde kilit elde edilemedi. Wayawolfcoin muhtemelen halen çalışmaktadır.</translation>
     </message>
     <message>
         <location line="+4"/>

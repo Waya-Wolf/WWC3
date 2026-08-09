@@ -22,7 +22,7 @@ BEGIN
             VALUE "FileDescription",    "Wayawolfcoin-Qt (GUI client for Wayawolfcoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "wayawolfcoin-qt"
-            VALUE "LegalCopyright",     "2009-2014 The Bitcoin developers, 2020-2021 The DiminutiveCoin developers, 2022-2023 The Pepperscore developers"
+            VALUE "LegalCopyright",     "2009-2014 The Bitcoin developers, 2020-2021 The DiminutiveCoin developers, 2022-2023 The Pepperscore developers, 2023-2026 Wayawolfcoin developers"
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "wayawolfcoin-qt.exe"
             VALUE "ProductName",        "Wayawolfcoin-Qt"

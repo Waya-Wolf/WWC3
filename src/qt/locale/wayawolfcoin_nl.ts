@@ -3,22 +3,24 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About PeppersCore</source>
-        <translation>Over PeppersCore</translation>
+        <source>About Wayawolfcoin</source>
+        <translation>Over Wayawolfcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;PeppersCore&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;PeppersCore&lt;/b&gt; versie</translation>
+        <source>&lt;b&gt;Wayawolfcoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Wayawolfcoin&lt;/b&gt; versie</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2020-2021 The DiminutiveCoin developers
-Copyright © 2022-2023 The PeppersCore developers</source>
+Copyright © 2022-2023 The PeppersCore developers
+Copyright © 2023-2026 The Wayawolfcoin developers</source>
         <translation>Copyright © 2009-2014 De Bitcoin ontwikkelaars
 Copyright © 2020-2021 De DiminutiveCoin ontwikkelaars
-Copyright © 2022-2023 De PeppersCore ontwikkelaars</translation>
+Copyright © 2022-2023 De PeppersCore ontwikkelaars
+Copyright © 2023-2026 De Wayawolfcoin ontwikkelaars</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,8 +62,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your PeppersCore addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dit zijn al jou PeppersCore adressen om betalingen mee te ontvangen. Je kunt iedere verzender een apart adres geven zodat je kunt volgen wie jou betaald.</translation>
+        <source>These are your Wayawolfcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dit zijn al jou Wayawolfcoin adressen om betalingen mee te ontvangen. Je kunt iedere verzender een apart adres geven zodat je kunt volgen wie jou betaald.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -75,8 +77,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a PeppersCore address</source>
-        <translation>Teken een bericht om te bewijzen dat je een PeppersCore adres bezit.</translation>
+        <source>Sign a message to prove you own a Wayawolfcoin address</source>
+        <translation>Teken een bericht om te bewijzen dat je een Wayawolfcoin adres bezit.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +92,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified PeppersCore address</source>
-        <translation>Verifieer een bericht om zeker te zijn dat deze is ondertekend met een specifiek PeppersCore adres</translation>
+        <source>Verify a message to ensure it was signed with a specified Wayawolfcoin address</source>
+        <translation>Verifieer een bericht om zeker te zijn dat deze is ondertekend met een specifiek Wayawolfcoin adres</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,8 +260,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>PeppersCore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>PeppersCore zal nu sluiten om het versleutel proces te voltooien. Onthou dat het versleutelen van je portemonnee je niet volledig beschermt tegen diefstal van munten door malware op je computer.</translation>
+        <source>Wayawolfcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Wayawolfcoin zal nu sluiten om het versleutel proces te voltooien. Onthou dat het versleutelen van je portemonnee je niet volledig beschermt tegen diefstal van munten door malware op je computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -304,7 +306,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>PeppersCoreGUI</name>
+    <name>WayawolfcoinGUI</name>
     <message>
         <location filename="../wayawolfcoingui.cpp" line="+297"/>
         <source>Sign &amp;message...</source>
@@ -352,8 +354,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about PeppersCore</source>
-        <translation>Toon informatie over PeppersCore</translation>
+        <source>Show information about Wayawolfcoin</source>
+        <translation>Toon informatie over Wayawolfcoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +394,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a PeppersCore address</source>
-        <translation>Verstuur munten naar een PeppersCore adres</translation>
+        <source>Send coins to a Wayawolfcoin address</source>
+        <translation>Verstuur munten naar een Wayawolfcoin adres</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for PeppersCore</source>
-        <translation>Verander configuratie opties voor PeppersCore</translation>
+        <source>Modify configuration options for Wayawolfcoin</source>
+        <translation>Verander configuratie opties voor Wayawolfcoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,8 +440,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <source>PeppersCore</source>
-        <translation>PeppersCore</translation>
+        <source>Wayawolfcoin</source>
+        <translation>Wayawolfcoin</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -448,8 +450,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About PeppersCore</source>
-        <translation>&amp;Over PeppersCore</translation>
+        <source>&amp;About Wayawolfcoin</source>
+        <translation>&amp;Over Wayawolfcoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +502,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>PeppersCore client</source>
-        <translation>PeppersCore client</translation>
+        <source>Wayawolfcoin client</source>
+        <translation>Wayawolfcoin client</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to PeppersCore network</source>
-        <translation><numerusform>%n actieve verbinding naar PeppersCore netwerk</numerusform><numerusform>%n actieve verbindingen naar PeppersCore netwerk</numerusform></translation>
+        <source>%n active connection(s) to Wayawolfcoin network</source>
+        <translation><numerusform>%n actieve verbinding naar Wayawolfcoin netwerk</numerusform><numerusform>%n actieve verbindingen naar Wayawolfcoin netwerk</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -600,8 +602,8 @@ Adres: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid PeppersCore address or malformed URI parameters.</source>
-        <translation>URI kan niet ontleedt worden! Mogelijke oorzaken zijn een ongeldig PeppersCore adres of incorrecte URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Wayawolfcoin address or malformed URI parameters.</source>
+        <translation>URI kan niet ontleedt worden! Mogelijke oorzaken zijn een ongeldig Wayawolfcoin adres of incorrecte URI parameters.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -723,8 +725,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../wayawolfcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. PeppersCore can no longer continue safely and will quit.</source>
-        <translation>Een fatale fout . PeppersCore kan niet langer veilig doorgaan en sluit af.</translation>
+        <source>A fatal error occurred. Wayawolfcoin can no longer continue safely and will quit.</source>
+        <translation>Een fatale fout . Wayawolfcoin kan niet langer veilig doorgaan en sluit af.</translation>
     </message>
 </context>
 <context>
@@ -1057,8 +1059,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid PeppersCore address.</source>
-        <translation>Het ingevoerde adres &quot;%1&quot; is geen geldig PeppersCore adres.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Wayawolfcoin address.</source>
+        <translation>Het ingevoerde adres &quot;%1&quot; is geen geldig Wayawolfcoin adres.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1076,8 +1078,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>PeppersCore-Qt</source>
-        <translation>PeppersCore-Qt</translation>
+        <source>Wayawolfcoin-Qt</source>
+        <translation>Wayawolfcoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1149,13 +1151,13 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start PeppersCore after logging in to the system.</source>
-        <translation>Automatisch starten van PeppersCore na inloggen van het systeem.</translation>
+        <source>Automatically start Wayawolfcoin after logging in to the system.</source>
+        <translation>Automatisch starten van Wayawolfcoin na inloggen van het systeem.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start PeppersCore on system login</source>
-        <translation>&amp;Start PeppersCore bij systeem aanmelding</translation>
+        <source>&amp;Start Wayawolfcoin on system login</source>
+        <translation>&amp;Start Wayawolfcoin bij systeem aanmelding</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1164,8 +1166,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the PeppersCore client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>De PeppersCore client poort automatisch openen op de router. Dit werkt alleen wanneer uw router UPnP ondersteunt en deze is ingeschakeld.</translation>
+        <source>Automatically open the Wayawolfcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>De Wayawolfcoin client poort automatisch openen op de router. Dit werkt alleen wanneer uw router UPnP ondersteunt en deze is ingeschakeld.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1194,7 +1196,7 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the PeppersCore network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Wayawolfcoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1239,8 +1241,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting PeppersCore.</source>
-        <translation>De user interface-taal kan hier ingesteld worden. Deze instelling word toegepast na PeppersCore opnieuw op te starten.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Wayawolfcoin.</source>
+        <translation>De user interface-taal kan hier ingesteld worden. Deze instelling word toegepast na Wayawolfcoin opnieuw op te starten.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1306,8 +1308,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting PeppersCore.</source>
-        <translation>Deze instelling word toegepast na een restart van PeppersCore.</translation>
+        <source>This setting will take effect after restarting Wayawolfcoin.</source>
+        <translation>Deze instelling word toegepast na een restart van Wayawolfcoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1325,8 +1327,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PeppersCore network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn, Je portemonnee synchroniseerd automatisch met het PeppersCore netwerk nadat er verbindig is gemaakt, maar dit proces is nog niet voltooid.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Wayawolfcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn, Je portemonnee synchroniseerd automatisch met het Wayawolfcoin netwerk nadat er verbindig is gemaakt, maar dit proces is nog niet voltooid.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1567,8 +1569,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the PeppersCore-Qt help message to get a list with possible PeppersCore command-line options.</source>
-        <translation>Laat het PeppersCore-QT help bericht zien om een lijst te krijgen met mogelijke PeppersCore command-regel opties.</translation>
+        <source>Show the Wayawolfcoin-Qt help message to get a list with possible Wayawolfcoin command-line options.</source>
+        <translation>Laat het Wayawolfcoin-QT help bericht zien om een lijst te krijgen met mogelijke Wayawolfcoin command-regel opties.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1587,13 +1589,13 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>PeppersCore - Debug window</source>
-        <translation>PeppersCore - Debugscherm</translation>
+        <source>Wayawolfcoin - Debug window</source>
+        <translation>Wayawolfcoin - Debugscherm</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>PeppersCore Core</source>
-        <translation>PeppersCore Kern</translation>
+        <source>Wayawolfcoin Core</source>
+        <translation>Wayawolfcoin Kern</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1602,8 +1604,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the PeppersCore debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het PeppersCore debug log bestand van de huidige data map. Dit kan een paar seconden duren voor grote log bestanden.</translation>
+        <source>Open the Wayawolfcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het Wayawolfcoin debug log bestand van de huidige data map. Dit kan een paar seconden duren voor grote log bestanden.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1612,8 +1614,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the PeppersCore RPC console.</source>
-        <translation>Welkom bij de PeppersCore RPC console.</translation>
+        <source>Welcome to the Wayawolfcoin RPC console.</source>
+        <translation>Welkom bij de Wayawolfcoin RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1793,8 +1795,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a PeppersCore address (e.g. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Voeg een PeppersCore adres in (bijv. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Wayawolfcoin address (e.g. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Voeg een Wayawolfcoin adres in (bijv. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1893,8 +1895,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid PeppersCore address</source>
-        <translation>WAARSCHUWING: Ongeldig PeppersCore adres</translation>
+        <source>WARNING: Invalid Wayawolfcoin address</source>
+        <translation>WAARSCHUWING: Ongeldig Wayawolfcoin adres</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1967,8 +1969,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a PeppersCore address (e.g. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Voeg een PeppersCore adres in (bijv. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Wayawolfcoin address (e.g. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Voeg een Wayawolfcoin adres in (bijv. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2028,8 +2030,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this PeppersCore address</source>
-        <translation>Teken een bericht om te bewijzen dat je een PeppersCore adres bezit.</translation>
+        <source>Sign the message to prove you own this Wayawolfcoin address</source>
+        <translation>Teken een bericht om te bewijzen dat je een Wayawolfcoin adres bezit.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2060,8 +2062,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified PeppersCore address</source>
-        <translation>Verifieer een bericht om zeker te zijn dat deze is ondertekend met een specifiek PeppersCore adres</translation>
+        <source>Verify the message to ensure it was signed with the specified Wayawolfcoin address</source>
+        <translation>Verifieer een bericht om zeker te zijn dat deze is ondertekend met een specifiek Wayawolfcoin adres</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2071,8 +2073,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a PeppersCore address (e.g. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Voeg een PeppersCore adres in (bijv. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Wayawolfcoin address (e.g. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Voeg een Wayawolfcoin adres in (bijv. E8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2081,8 +2083,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter PeppersCore signature</source>
-        <translation>Voer PeppersCore handtekening in</translation>
+        <source>Enter Wayawolfcoin signature</source>
+        <translation>Voer Wayawolfcoin handtekening in</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2660,8 +2662,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <name>wayawolfcoin-core</name>
     <message>
         <location filename="../wayawolfcoinstrings.cpp" line="+171"/>
-        <source>PeppersCore version</source>
-        <translation>PeppersCore versie</translation>
+        <source>Wayawolfcoin version</source>
+        <translation>Wayawolfcoin versie</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2719,7 +2721,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;PeppersCore Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Wayawolfcoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2825,8 +2827,8 @@ for example: alertnotify=echo %%s | mail -s &quot;PeppersCore Alert&quot; admin@
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong PeppersCore will not work properly.</source>
-        <translation>Waarschuwing: Controleer of de datum en tijd van de computer juist zijn! Als uw klok verkeerd is PeppersCore zal niet goed werken.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Wayawolfcoin will not work properly.</source>
+        <translation>Waarschuwing: Controleer of de datum en tijd van de computer juist zijn! Als uw klok verkeerd is Wayawolfcoin zal niet goed werken.</translation>
     </message>
     <message>
         <location line="+130"/>
@@ -3120,7 +3122,7 @@ for example: alertnotify=echo %%s | mail -s &quot;PeppersCore Alert&quot; admin@
     </message>
     <message>
         <location line="+8"/>
-        <source>Initialization sanity check failed. PeppersCore is shutting down.</source>
+        <source>Initialization sanity check failed. Wayawolfcoin is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3175,13 +3177,13 @@ for example: alertnotify=echo %%s | mail -s &quot;PeppersCore Alert&quot; admin@
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of PeppersCore</source>
-        <translation>Fout bij laden van wallet.dat: Portemonnee vereist een nieuwere versie van PeppersCore</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Wayawolfcoin</source>
+        <translation>Fout bij laden van wallet.dat: Portemonnee vereist een nieuwere versie van Wayawolfcoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart PeppersCore to complete</source>
-        <translation>Portemonnee moet herschreven worden: herstart PeppersCore om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart Wayawolfcoin to complete</source>
+        <translation>Portemonnee moet herschreven worden: herstart Wayawolfcoin om te voltooien</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3240,8 +3242,8 @@ for example: alertnotify=echo %%s | mail -s &quot;PeppersCore Alert&quot; admin@
     </message>
     <message>
         <location line="+124"/>
-        <source>Unable to bind to %s on this computer. PeppersCore is probably already running.</source>
-        <translation>Niet mogelijk om %s op deze computer. PeppersCore is waarschijnlijk al geopened.</translation>
+        <source>Unable to bind to %s on this computer. Wayawolfcoin is probably already running.</source>
+        <translation>Niet mogelijk om %s op deze computer. Wayawolfcoin is waarschijnlijk al geopened.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3275,7 +3277,7 @@ for example: alertnotify=echo %%s | mail -s &quot;PeppersCore Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. PeppersCore is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Wayawolfcoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
